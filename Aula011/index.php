@@ -9,21 +9,25 @@
 <body>
     <pre>
         <?php
-            require_once 'Pessoa.php';
+            require_once 'Visitante.php';
             require_once 'Aluno.php';
-            require_once 'Professor.php';
-            $p[1] = new Aluno("joao", 15, "M");
-            $p[1]->setMatr(40028922);
-            $p[1]->setCurso("Fisica");
+            require_once 'Bolsista.php';
 
-            $p[1]->cancelarMatricula();
+            $b = new Bolsista("Jeremias", 15, "M");
+            $a = new Aluno("Jozias", 19, "M");
 
-            $p[0] = new Professor("Jeremias", 25, "M");
-            $p[0]->setSalario(1200);
-            $p[0]->setEspecialidade("Matematica");
+            $b->setBolsa(20);
+            $b->setMatr(4002);
+            $b->setCurso("Informatica");
 
-            $p[0]->receberAum(500);
-            print_r($p);
+            $a->setMatr(8922);
+            $a->setCurso("Eletromecanica");
+
+
+            print_r($b);
+            $b->pagarMensal();
+            print_r($a);
+            $a->pagarMensal();
         
         
         

@@ -29,7 +29,7 @@
 
         //metodos
 
-        public function cancelarMatricula(){
-            $this->setMatr(null);
+        public function pagarMensal(){
+                print("Pagando mensalidade do aluno {$this->getNome()}<br>");
         }
     }

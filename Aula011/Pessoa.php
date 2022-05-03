@@ -1,6 +1,6 @@
 <?php
 
-    class Pessoa{
+    abstract class Pessoa{
         //atributos
         private $nome;
         private $idade;
@@ -45,7 +45,7 @@
         }
 
         //metodos
-        public function fazerAniver(){
+        public final function fazerAniver(){
             $this->setIdade($this->getIdade() + 1);
         }
     }
