@@ -13,22 +13,15 @@
             require_once 'Repteis/Reptil.php';
             require_once 'Peixes/Peixe.php';
             require_once 'Aves/Ave.php';
+            require_once 'Mamiferos/Canguru.php';
 
             $m = new Mamifero(80.5, 2, 4);
             $m->setCorPelo("Preto");
             print_r($m);
 
-            $m->locomover();
-            $m->alimentar();
-            $m->emitirSom();
+            $c = new Canguru(20, 3, 4);
+            print_r($c);
 
-            $r = new Reptil(20, 3, 4);
-            $r->setCorEscama("Verde");
-            print_r($r);
-
-            $r->locomover();
-            $r->alimentar();
-            $r->emitirSom();
 
 
         ?>
