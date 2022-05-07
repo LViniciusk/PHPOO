@@ -9,6 +9,7 @@
 <body>
     <pre>
         <?php
+            require_once 'Mamiferos/Cachorro.php';
             require_once 'Mamiferos/Mamifero.php';
             require_once 'Repteis/Reptil.php';
             require_once 'Peixes/Peixe.php';
@@ -20,8 +21,12 @@
             print_r($m);
 
             $c = new Canguru(20, 3, 4);
+            $c->setCorPelo("Marrom");
             print_r($c);
 
+            $k = new Cachorro(4, 5, 4);
+            $k->setCorPelo("Branco");
+            print_r($k);
 
 
         ?>
