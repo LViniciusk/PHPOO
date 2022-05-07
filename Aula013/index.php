@@ -8,7 +8,10 @@
 </head>
 <body>
     <?php 
+        require_once 'Cachorro.php';
+        $c = new Cachorro(9, 4, 4);
 
+        $c->reagirIP();
 
     ?>
 </body>
