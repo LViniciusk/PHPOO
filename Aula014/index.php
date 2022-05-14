@@ -20,7 +20,8 @@
             $p[0] = new Espectador("jeremias", 19, "M", "jeremias123");
 
             print_r($p);
-            
+            $p[0]->assistiu($v[0]);
+
         ?>
 
     </pre>
