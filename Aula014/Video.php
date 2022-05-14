@@ -35,7 +35,8 @@
 
         public function setAvaliacao($avaliacao)
         {
-                $this->avaliacao = $avaliacao;
+                $media = ($this->avaliacao + $avaliacao)/$this->view;
+                $this->avaliacao = $media;
         }
 
         public function getView()
